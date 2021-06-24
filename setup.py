@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='capsule_vacuum_vessel',
-    author='Mate',
+    author='Keir',
     version='0.0.2',
     author_email='keirhearn@gmail.com',
     license='MIT',
