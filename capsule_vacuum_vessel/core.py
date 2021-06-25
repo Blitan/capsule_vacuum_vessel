@@ -19,6 +19,8 @@ def point_find(outer_start_point,radius,thickness):
     p5 = ((p6[0] + (radius*math.cos((2*math.pi)/8))),(p6[1] - radius) + (radius*math.sin((2*math.pi)/8)))
     p8 = ((p7[0] + (inner_r*math.cos((2*math.pi)/8))),(p7[1] - inner_r) + (inner_r*math.sin((2*math.pi)/8)))
     p11 = ((p12[0]) + (inner_r*math.cos((3*math.pi)/8)),(p12[1]+inner_r) -(inner_r*math.sin((3*math.pi)/8)))
-    print(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,top_outer_y)
+    return p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12
     
-point_find((0,0),300,10)
+points = point_find((0,0),300,10)
+print(points)
+

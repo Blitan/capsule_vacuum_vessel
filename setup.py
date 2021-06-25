@@ -7,7 +7,7 @@ setup(
     author_email='keirhearn@gmail.com',
     license='MIT',
     url='https://github.com/Blitan/capsule_vacuum_vessel',
-    description='Package includes a function which returns from 2 given coordinate, a list of 10 coordinates for a TF coil in XZ 2D plane',
+    description='Package includes a function which returns from 3 given parameters, the coordinates for a capsule vacuum vessel.',
     packages=["capsule_vacuum_vessel"],
 
 )
