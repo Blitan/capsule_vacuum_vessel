@@ -1,4 +1,4 @@
-
+import pytest
 from capsule_vacuum_vessel import point_find
 
 def test_pointnum1():
