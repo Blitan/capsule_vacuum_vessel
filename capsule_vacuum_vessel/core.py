@@ -28,7 +28,7 @@ points = point_find((0,0),300,10)
 print(points)
 
 def vacuum_vessel(outer_start_point,radius,thickness,angle):
-    connection = ["circle","circle","straight","circle","circle","straight","circle","circle","straight","circle","circle","straight"]
+    
     pointsfind= point_find(outer_start_point,radius,thickness)
     
     vacuum_vessel = paramak.RotateMixedShape(
@@ -38,6 +38,7 @@ def vacuum_vessel(outer_start_point,radius,thickness,angle):
         
     )
     stp_filename="Capsule_shaped_vacuum_vessel.stp"
-    vacuum_vessel.show()
+
+    vacuum_vessel.export_stp("Capsule_shaped_vacuum_vessel.stp")
 
 vacuum_vessel((0,0),300,10,180)
