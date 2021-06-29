@@ -1,0 +1,8 @@
+README.md
+setup.py
+capsule_vacuum_vessel/__init__.py
+capsule_vacuum_vessel/core.py
+capsule_vacuum_vessel.egg-info/PKG-INFO
+capsule_vacuum_vessel.egg-info/SOURCES.txt
+capsule_vacuum_vessel.egg-info/dependency_links.txt
+capsule_vacuum_vessel.egg-info/top_level.txt
