@@ -87,7 +87,6 @@ EXPOSE 8888
 WORKDIR /home/paramak/capsule_vacuum_vessel
 
 
-FROM dependencies as final
 
 COPY run_tests.sh run_tests.sh
 COPY capsule_vacuum_vessel capsule_vacuum_vessel/
