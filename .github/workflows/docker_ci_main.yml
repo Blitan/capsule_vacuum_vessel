@@ -1,0 +1,18 @@
+name: Pytest - CI for Docker
+
+on:
+  pull_request:    
+    branches:
+    - development  
+    - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Build and test with Docker
+      run: |
+        docker build -t capsule_vacuum_vessel .
+        docker run --rm capsule_vacuum_vessel /bin/bash -c "bash run_tests.sh" 
