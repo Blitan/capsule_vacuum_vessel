@@ -93,7 +93,7 @@ COPY capsule_vacuum_vessel capsule_vacuum_vessel/
 COPY setup.py setup.py
 COPY tests tests/
 COPY README.md README.md
-COPY pytest.ini pytest.ini
+
 
 # using setup.py instead of pip due to https://github.com/pypa/pip/issues/5816
 RUN python setup.py install
