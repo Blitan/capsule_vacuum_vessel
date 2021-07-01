@@ -82,9 +82,9 @@ ENV OPENMC_CROSS_SECTIONS=/cross_sections.xml
 ENV PATH="/MOAB/build/bin:${PATH}"
 ENV PATH="/DAGMC/bin:${PATH}"
 
-RUN mkdir /home/paramak/capsule_vacuum_vessel
+RUN mkdir /home/capsule_vacuum_vessel
 EXPOSE 8888
-WORKDIR /home/paramak/capsule_vacuum_vessel
+WORKDIR /home/capsule_vacuum_vessel
 
 
 
@@ -99,5 +99,5 @@ COPY pytest.ini pytest.ini
 RUN python setup.py install
 
 # this helps prevent the kernal failing
-RUN echo "#!/bin/bash\n\njupyter lab --notebook-dir=/home/paramak_tfcoil_rectroundcorner --port=8888 --no-browser --ip=0.0.0.0 --allow-root" >> /home/paramak/capsule_vacuum_vessel/docker-cmd.sh
-CMD bash /home/paramak/capsule_vacuum_vessel/docker-cmd.sh
+RUN echo "#!/bin/bash\n\njupyter lab --notebook-dir=/home/paramak_tfcoil_rectroundcorner --port=8888 --no-browser --ip=0.0.0.0 --allow-root" >> /home/capsule_vacuum_vessel/docker-cmd.sh
+CMD bash /home/capsule_vacuum_vessel/docker-cmd.sh
