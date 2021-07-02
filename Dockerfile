@@ -47,11 +47,7 @@ ARG cq_version=2.1
 ARG include_neutronics=false
 ARG compile_cores=1
 
-ENV LANG=C.UTF-8 LC_ALL=C.UTF-8 \
-    PATH=/opt/openmc/bin:/opt/NJOY2016/build:$PATH \
-    LD_LIBRARY_PATH=/opt/openmc/lib:$LD_LIBRARY_PATH \
-    CC=/usr/bin/mpicc CXX=/usr/bin/mpicxx \
-    DEBIAN_FRONTEND=noninteractive
+
 
 RUN apt-get update -y && \
     apt-get upgrade -y
@@ -78,9 +74,7 @@ RUN git clone --single-branch --branch main --depth 1 https://github.com/fusion-
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
-ENV OPENMC_CROSS_SECTIONS=/cross_sections.xml
-ENV PATH="/MOAB/build/bin:${PATH}"
-ENV PATH="/DAGMC/bin:${PATH}"
+
 
 RUN mkdir /home/capsule_vacuum_vessel
 EXPOSE 8888
