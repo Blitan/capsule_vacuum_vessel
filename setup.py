@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name='capsule_vacuum_vessel',
     author='Keir',
-    version='0.0.3',
+    version='0.0.4',
     author_email='keirhearn@gmail.com',
     license='MIT',
     url='https://github.com/Blitan/capsule_vacuum_vessel',
